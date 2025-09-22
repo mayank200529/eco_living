@@ -1,7 +1,5 @@
 # eco\_living
 
-![Eco Living Logo](assets/logo.png)
-
 **Mission**
 Educate, inspire, and empower people to adopt eco-friendly habits for a healthier planet. We aim to make sustainable living simple, accessible, and rewarding.
 
@@ -34,9 +32,6 @@ Educate, inspire, and empower people to adopt eco-friendly habits for a healthie
 git clone https://github.com/mayank200529/eco_living.git
 cd eco_living
 ```
-
-Frontend: `cd frontend && npm install && npm start`
-Backend: `cd backend && pip install -r requirements.txt && flask run`
 
 ---
 
