@@ -31,7 +31,7 @@ Educate, inspire, and empower people to adopt eco-friendly habits for a healthie
 ## Quick Start
 
 ```bash
-git clone https://github.com/<your-username>/eco_living.git
+git clone https://github.com/mayank200529/eco_living.git
 cd eco_living
 ```
 
@@ -45,7 +45,6 @@ Backend: `cd backend && pip install -r requirements.txt && flask run`
 1. Fork the repo & create a branch
 2. Commit changes with clear messages
 3. Open a Pull Request
-4. git clone https://github.com/mayank200529/eco_living.git
  
 ---
 
