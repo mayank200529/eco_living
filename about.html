@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* About Page */
+        body {
+            margin: 0%;
+            padding: 0%;
+            height: auto;
+        }
+
+        nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  padding: 10px ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;     
+  z-index: 100;
+  margin-top: 12px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;   /* ✅ same as home */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  padding: 8px 15px;   /* ✅ balanced spacing */
+}
+
+        .nav-links a:hover {
+            color:white;
+        }
+
+        .about-hero {
+            background: url('aboutbg.jpeg') no-repeat center center/cover;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            font-size: x-large;
+        }
+
+        .about-hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 0;
+        }
+
+        .about-hero h1,
+        .about-hero p {
+            position: relative;
+            z-index: 1;
+        }
+
+        .mission {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+            font-size: x-large;
+            margin-bottom: 10%;
+        }
+
+        .mission h2 {
+            color: #4e7d52;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+
+        .importance h2 {
+            color:  #4e7d52;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: xx-large;
+            margin-bottom: 6%;
+
+        }
+
+        .cards1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 5%;
+        }
+
+        .cards2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20%;
+        }
+
+        .card {
+            background: #589372;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 12px;
+            padding: 20px;
+            width: 300px;
+            height: 150px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            font-size: large;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color:  #fff;
+            margin-bottom: 10px;
+        }
+
+        .mission img {
+            height: 400px;
+            width: 500px;
+            background-attachment: fixed;
+            border-radius: 10%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.259);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">EcoLiving</div>
+        <div class="nav-links">
+         <a href="home.html">Home</a>
+         <a href="about.html">About</a>
+      <a href="Tips.html">Tips</a>
+      <a href="carbon.html">Carbon Footprint Calculator</a>
+      <a href="Events.html">Event & Workshops</a>
+      <a href="contact .html">Contact</a>
+        </div>
+     </nav>
+    <section class="about">
+        <div class="about-hero">
+            <h1> About Us</h1>
+            <p>Inspiring sustainable living for a healthier planet.</p>
+        </div>
+
+        <div class="mission">
+            <img src="a1.jpeg" alt="">
+            <h2>Our Mission</h2>
+            <p>Our mission is to educate, inspire, and empower people to adopt eco-friendly habits and make conscious
+                choices for a healthier planet. We strive to make sustainable living simple, accessible, and rewarding,
+                building a community where small daily actions create a big positive impact for future generations.</p>
+        </div>
+
+        <div class="importance">
+            <h2>Why Eco-Living Matters</h2>
+            <div class="cards1">
+                <div class="card">
+                    <h3>Protect Nature</h3>
+                    <p>Reduce pollution, conserve forests, and protect wildlife by making greener choices every day.</p>
+                </div>
+                <div class="card">
+                    <h3>Healthier Life</h3>
+                    <p>Eco-living promotes clean air, chemical-free food, and a safer environment for everyone.</p>
+                </div>
+                <div class="card">
+                    <h3>Save Resources</h3>
+                    <p>Conserve energy, water, and natural resources to ensure sustainability for future generations.
+                    </p>
+                </div>
+                
+
+            </div>
+            <div class="cards2">
+                <div class="card">
+                    <h3>Empower Communities</h3>
+                    <p>Support local eco-friendly businesses, farmers, and initiatives that make a real impact.</p>
+                </div>
+                <div class="card">
+                    <h3>Fight Climate Change</h3>
+                    <p>Lower carbon emissions by using renewable energy, sustainable transport, and eco-friendly
+                        products.</p>
+                </div>
+                <div class="card">
+                    <h3>Inspire Future Generations</h3>
+                    <p>Teach children the value of sustainability and create a culture of responsibility for a greener
+                        tomorrow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

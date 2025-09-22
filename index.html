@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Carbon Footprint Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f8f5;
+      color: #2d4739;
+      text-align: center;
+      padding: 20px;
+    }
+    .calculator-box {
+      max-width: 400px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #228b22;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      text-align: left;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #228b22;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #196619;
+    }
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator-box">
+    <h2>Carbon Footprint Calculator</h2>
+    <form id="calcForm">
+      <label>Electricity used per day (in hours):</label>
+      <input type="number" id="electricity" min="0" required>
+
+      <label>Plastic items used per week:</label>
+      <input type="number" id="plastic" min="0" required>
+
+      <label>Transport mode:</label>
+      <select id="transport">
+        <option value="car">Car</option>
+        <option value="bike">Bike</option>
+        <option value="bus">Bus</option>
+        <option value="cycle">Cycle</option>
+        <option value="walk">Walk</option>
+      </select>
+
+      <button type="button" onclick="calculateFootprint()">Calculate</button>
+    </form>
+
+    <div class="result" id="resultBox"></div>
+  </div>
+
+  <script>
+    function calculateFootprint() {
+      let electricity = document.getElementById("electricity").value;
+      let plastic = document.getElementById("plastic").value;
+      let transport = document.getElementById("transport").value;
+
+      // Dummy calculation logic (simple for demo)
+      let footprint = (electricity * 0.5) + (plastic * 0.2);
+
+      if (transport === "car") footprint += 5;
+      else if (transport === "bike") footprint += 2;
+      else if (transport === "bus") footprint += 1.5;
+      else if (transport === "cycle" || transport === "walk") footprint += 0;
+
+      document.getElementById("resultBox").innerText =
+        "Your estimated carbon footprint is " + footprint.toFixed(2) + " units/year.";
+    }
+  </script>
+</body>
+</html>
+
+</body>
+</html>
